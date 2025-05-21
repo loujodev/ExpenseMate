@@ -33,13 +33,34 @@ This project is a standard Flutter application.
     git clone [your-repository-url]
     cd expense_mate
     ```
+3.  **Set up Firebase:**
+    * This project **requires Firebase** for authentication and database functionalities. You will need to set up your own Firebase project.
+    * Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
+    * **For Android:**
+        * Register your Android app with your Firebase project. Make sure the package name matches `com.example.expense_mate` (or update it in `android/app/build.gradle.kts` if you change it).
+        * Download the `google-services.json` file from your Firebase project settings.
+        * Place this `google-services.json` file into the `android/app/` directory of this project.
+    * **For iOS:**
+        * Register your iOS app with your Firebase project. Make sure the iOS Bundle ID matches `com.example.expenseMate` (or update it in Xcode if you change it).
+        * Download the `GoogleService-Info.plist` file from your Firebase project settings.
+        * Open the `ios` folder of this project in Xcode, and drag and drop the `GoogleService-Info.plist` file into the `Runner` subfolder (ensure it's added to the Runner target).
+    * **Configure Firebase in Flutter:**
+        * You need to ensure your Flutter app is configured with your Firebase project's specific options. The easiest way to do this is by using the FlutterFire CLI:
+            1.  Install or update the Firebase CLI: `npm install -g firebase-tools` (or `sudo npm install -g firebase-tools`)
+            2.  Install or update the FlutterFire CLI: `dart pub global activate flutterfire_cli`
+            3.  Log in to Firebase: `firebase login`
+            4.  In the root directory of this project, run: `flutterfire configure`
+            5.  This command will guide you to select your Firebase project and will automatically generate the `lib/firebase_options.dart` file with your project's specific credentials. It will also update native Firebase configurations if needed.
+    * **Enable Firebase Services:**
+        * In the Firebase Console, enable the following services for your project:
+            * **Authentication:** Enable Email/Password sign-in method. You may also want to enable other methods as needed.
 
-3.  **Install dependencies:**
+4.  **Install dependencies:**
     ```bash
     flutter pub get
     ```
 
-4.  **Run the app:**
+5.  **Run the app:**
     ```bash
     flutter run
     ```
