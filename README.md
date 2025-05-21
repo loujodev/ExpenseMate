@@ -34,13 +34,9 @@ This project is a standard Flutter application.
     cd expense_mate
     ```
 3.  **Set up Firebase:**
-    * This project **requires Firebase** for authentication and database functionalities. You will need to set up your own Firebase project.
+    * This project **requires Firebase** for authentication functionalities. You will need to set up your own Firebase project to protect sensitive data in my own `lib/firebase_options.dart`
     * Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
-    * **For Android:**
-        * Register your Android app with your Firebase project. Make sure the package name matches `com.example.expense_mate` (or update it in `android/app/build.gradle.kts` if you change it).
-        * Download the `google-services.json` file from your Firebase project settings.
-        * Place this `google-services.json` file into the `android/app/` directory of this project.
-    * **For iOS:**
+
         * Register your iOS app with your Firebase project. Make sure the iOS Bundle ID matches `com.example.expenseMate` (or update it in Xcode if you change it).
         * Download the `GoogleService-Info.plist` file from your Firebase project settings.
         * Open the `ios` folder of this project in Xcode, and drag and drop the `GoogleService-Info.plist` file into the `Runner` subfolder (ensure it's added to the Runner target).
