@@ -1,0 +1,45 @@
+name: expense_mate
+description: "The App to track your expenses."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  google_fonts: ^6.2.1 
+  sqflite: ^2.3.3 
+  path: ^1.9.0 
+  path_provider: ^2.1.5
+  provider:   
+  intl: ^0.18.1 
+  geolocator: ^14.0.0 
+  geocoding: ^3.0.0
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.2
+  smooth_page_indicator: ^1.1.0 
+  fl_chart: ^0.65.0 
+  image_picker: ^1.1.2 
+  flutter_emoji: ^2.5.1
+  auto_size_text: ^3.0.0 
+  flutter_local_notifications: ^19.1.0 
+  timezone: ^0.10.0 
+  flutter_timezone: ^4.1.0
+  url_launcher: ^6.1.11 
+  flutter_native_splash: ^2.4.0
+
+
+  
+
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+
+flutter:
+  uses-material-design: true
