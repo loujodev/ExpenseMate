@@ -15,8 +15,8 @@ ExpenseMate is a mobile application built with Flutter to help you track your in
 
 ## Tech Stack
 
-* **Frontend:** Flutter (iOS, Android, Web)
-* **Backend & Authentication:** Firebase (Firestore, Firebase Auth)
+* **Frontend:** Flutter (iOS, Web)
+* **Backend & Authentication:** Firebase (Firebase Auth)
 * **State Management:** Provider
 * **Local Storage:** SQLite (via sqflite)
 
@@ -30,7 +30,7 @@ This project is a standard Flutter application.
 
 2.  **Clone the repository:**
     ```bash
-    git clone [your-repository-url]
+    git clone [repository-url]
     cd expense_mate
     ```
 3.  **Set up Firebase:**
