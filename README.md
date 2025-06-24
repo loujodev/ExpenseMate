@@ -10,7 +10,8 @@ ExpenseMate is a mobile application built with Flutter to help you track your in
 * **User Authentication:** Secure your data with Firebase authentication.
 * **Theme Customization:** Switch between light and dark themes.
 
-<img width="990" alt="Screenshot 2025-05-22 at 00 47 46" src="https://github.com/user-attachments/assets/c90dc104-2cfb-4984-9c95-29258f08f606" />
+
+<img width="990" alt="Screenshot 2025-05-22 at 00 47 46" src="https://github.com/user-attachments/assets/cec897a4-ed39-4d11-a25d-a11b692a4f57" />
 
 
 ## Tech Stack
